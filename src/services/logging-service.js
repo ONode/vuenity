@@ -1,6 +1,6 @@
-class LoggingService {
-    warnUnityContentRemoveNotAvailable(additionalDetails) {
-        this.warn(
+export class LoggingService {
+    warnUnityContentRemoveNotAvailable (additionalDetails) {
+        this.warn (
             "Your version of Unity does not support unloading the WebGL Player.",
             "This prevents VueUnityWebGL from unmounting this component properly.",
             "Please consider updating to Unity 2019.1 or newer, or reload the page",
@@ -10,8 +10,8 @@ class LoggingService {
         );
     }
 
-    errorUnityLoaderNotFound(additionalDetails) {
-        this.error(
+    errorUnityLoaderNotFound (additionalDetails) {
+        this.error (
             "Unable to use the Unity Loader, please make sure you've imported",
             "the Unity Loader the correct way. You might have entered an incorrect",
             "path to the UnityLoader.js. The path is not relative to your bundle,",
@@ -21,15 +21,20 @@ class LoggingService {
         );
     }
 
-    warn(...messages) {
+    warn (... messages) {
         // eslint-disable-next-line
-        console.warn(messages.filter(_ => typeof _ !== "undefined").join(" "));
+        console.warn (messages.filter (_ => typeof _ !== "undefined").join (" "));
     }
 
-    error(...messages) {
+    error (... messages) {
         // eslint-disable-next-line
-        console.error(messages.filter(_ => typeof _ !== "undefined").join(" "));
+        console.error (messages.filter (_ => typeof _ !== "undefined").join (" "));
+    }
+
+    info (... messages) {
+        // eslint-disable-next-line
+        console.log (messages.filter (_ => typeof _ !== "undefined").join (" "));
     }
 }
 
-export const loggingService = new LoggingService();
+export const loggingService = new LoggingService ();

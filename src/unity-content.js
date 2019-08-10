@@ -1,6 +1,6 @@
 import { loggingService } from "./services/logging-service";
 
-export default class UnityContent {
+export class UnityContent {
     static uniqueID = 0;
 
     constructor(buildJsonPath, unityLoaderJsPath, unityConfig) {

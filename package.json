@@ -1,10 +1,10 @@
 {
   "name": "vuenity",
-  "version": "1.0.1",
+  "version": "1.1.5",
   "description": "A Vue.js wrapper with communications for WebGL Unity games.",
-  "main": "dist/vuenity.umd.js",
+  "main": "src/index.js",
   "module": "dist/vuenity.esm.js",
-  "unpkg": "dist/vuenity.min.js",
+  "types": "@types/index.d.ts",
   "browser": {
     "./sfc": "src/vuenity.vue"
   },
@@ -19,7 +19,7 @@
     "unity",
     "webgl"
   ],
-  "author": "thooto",
+  "author": "heskworld",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -29,6 +29,7 @@
     "rollup-plugin-buble": "^0.19.6",
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-vue": "^5.0.0",
+    "typescript": "^3.5.2",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },

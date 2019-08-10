@@ -2,6 +2,8 @@
 
 A Vue.js wrapper component for Unity WebGL player based on [react-unity-webgl](https://www.npmjs.com/package/react-unity-webgl), with in and out communications.
 
+Supports typescript;
+
 ## Installation
 
 `npm install --save vuenity`

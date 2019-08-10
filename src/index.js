@@ -1,7 +1,8 @@
 import Vuenity from "./vuenity.vue";
 import Vue from "vue";
 
-export function install (Vue) {
+
+function install (Vue) {
     if (install.installed) return;
     install.installed = true;
     Vue.component ("Vuenity", Vuenity);
@@ -23,6 +24,9 @@ if (GlobalVue) {
     GlobalVue.use (plugin);
 }
 
+Vuenity.install = install;
+
 export default Vuenity;
 
 export { UnityContent } from "./unity-content";
+import { loggingService } from "./services/logging-service";
