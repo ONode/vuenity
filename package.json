@@ -1,7 +1,7 @@
 {
   "name": "vuenity",
-  "version": "1.1.5",
-  "description": "A Vue.js wrapper with communications for WebGL Unity games.",
+  "version": "1.1.6",
+  "description": "A Vue.js wrapper with communications for WebGL Unity applications.",
   "main": "src/index.js",
   "module": "dist/vuenity.esm.js",
   "types": "@types/index.d.ts",
@@ -19,7 +19,7 @@
     "unity",
     "webgl"
   ],
-  "author": "heskworld",
+  "author": "hacked-ek",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -36,10 +36,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Thooto/vuenity.git"
+    "url": "git+https://github.com/onode/vuenity.git"
   },
   "bugs": {
-    "url": "https://github.com/Thooto/vuenity/issues"
+    "url": "https://github.com/onode/vuenity/issues"
   },
-  "homepage": "https://github.com/Thooto/vuenity#readme"
+  "homepage": "https://github.com/onode/vuenity#readme"
 }
